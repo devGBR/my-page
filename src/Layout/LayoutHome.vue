@@ -1,93 +1,56 @@
 <template>
-   
-      <q-layout view="hHh Lpr lff" container style="min-height: 900px;" class="shadow-2 ">
-        <q-header elevated class="bg-black">
-          <q-toolbar style="flex-direction: row-reverse;">
-            <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
-            <q-toolbar-title>DevGBR</q-toolbar-title>
-          </q-toolbar>
-        </q-header>
-  
-        <q-drawer
-          v-model="drawer"
-          show-if-above
-  
-          :mini="miniState"
-          @mouseover="miniState = false"
-          @mouseout="miniState = true"
-          mini-to-overlay
-          side=""
-          :width="200"
-          :breakpoint="500"
-          bordered
-          class="bg-grey-3"
-        >
-          <q-scroll-area class="fit" :horizontal-thumb-style="{ opacity: 0 }">
-            <q-list padding>
-              <q-item clickable v-ripple v-show="teste">
-                <q-item-section avatar>
-                  <q-icon name="inbox" />
-                </q-item-section>
-  
-                <q-item-section>
-                  Inbox
-                </q-item-section>
-              </q-item>
-  
-              <q-item active clickable v-ripple >
-                <q-item-section avatar>
-                  <q-icon name="star" />
-                </q-item-section>
-  
-                <q-item-section>
-                  Star
-                </q-item-section>
-              </q-item>
-  
-              <q-item clickable v-ripple>
-                <q-item-section avatar>
-                  <q-icon name="send" />
-                </q-item-section>
-  
-                <q-item-section>
-                  Send
-                </q-item-section>
-              </q-item>
-  
-              <q-separator />
-  
-              <q-item clickable v-ripple>
-                <q-item-section avatar>
-                  <q-icon name="drafts" />
-                </q-item-section>
-  
-                <q-item-section>
-                  Drafts
-                </q-item-section>
-              </q-item>
-            </q-list>
-          </q-scroll-area>
-        </q-drawer>
-  
-        <q-page-container>
-          <q-page padding>
-            
-          </q-page>
-        </q-page-container>
-      </q-layout>
+  <q-layout view="hHh Lpr lff" container style="height: 700px; background: black; " class="shadow-2 " >
+     <q-header elevated class="bg-black" style="    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    font-family: Ubuntu,sans-serif;
+    z-index: 999;
+    transition: all .5s ease;">
+       <q-toolbar>
+         
+         <q-toolbar-title style="
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    padding-left: 13%;
+"><span style="color: #00ffff;">Dev</span><span>GBR</span></q-toolbar-title>
+         <q-btn flat @click="drawerRight = !drawerRight" round dense icon="menu" style="
+    margin-right: 3%;
+"/>
+       </q-toolbar>
+     </q-header>
+     
+     
+
+     <q-page-container style="padding-top: 83px;">
+       <q-page padding style="min-height: 817px;">
+        <img src="img/bannert.png" style="width: 100%; position: absolute;" alt="">
+        <slot style="position: fixed"/>
+       </q-page>
+     </q-page-container>
+   </q-layout>
  
-  </template>
-<script>
-import { ref } from 'vue'
-export default {
-    data(){
-        return{
-            drawer: ref(false),
-            miniState: ref(true)
-        }
-    }
-}
-</script>
+</template>
+
 <style scoped>
 
+
 </style>
+
+<script>
+import { ref } from 'vue'
+
+export default {
+ setup () {
+   return {
+     drawerLeft: ref(false),
+     drawerRight: ref(false)
+   }
+ }
+}
+
+  
+   
+
+</script>
+
