@@ -80,7 +80,6 @@ a{
   padding-top: 60px;
   text-align:center;
 }
-
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
