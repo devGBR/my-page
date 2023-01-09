@@ -1,0 +1,20 @@
+@import './quasar.variables.scss';
+@import '~quasar-styl';
+
+@font-face {
+    font-family: UbuntuBold;
+    src: url(./fonts/Ubuntu/Ubuntu-Bold.ttf);
+  }
+@font-face {
+    font-family: Ubuntu;
+    src: url(./fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+    font-family: UbuntuMedium;
+    src: url(./fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+@font-face {
+    font-family: UbuntuRegular;
+    src: url(./fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+// @import '~quasar-addon-styl';
