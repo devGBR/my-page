@@ -16,12 +16,12 @@
     padding-left: 13%;
 "><span style="color: #00ffff;">Dev</span><span>GBR</span></q-toolbar-title>
       <div class="links">
-        <a href="">Inicio</a>
+        <a href="#home">Inicio</a>
         <a href="#sobremim">Sobre mim</a>
-        <a href="">Skils</a>
-        <a href="">Experiências/Cursos</a>
-        <a href="">Projetos</a>
-        <a href="">Contato</a>
+        <a href="#skils">Skils</a>
+        <a href="#exp">Experiências/Cursos</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#footer">Contato</a>
       </div>
         
         <q-btn flat @click="openNav()" v-if="close===false" round dense icon="menu" class="sidebtn" style="margin-right: 4%;"/>
@@ -43,9 +43,35 @@
        <q-page  style="min-height: 817px;">
         
         <slot />
+        <footer id="footer">
+          <q-card  class="my-card">
+            <q-card-section>
+              <div class="title">
+              <div class="text-h6">
+                Contato
+              </div>
+              <div class="barra">
+                <div class="falecomigo">
+                  Fale Comigo
+                </div>
+              </div>
+            </div>
+            <q-card-section>
+              
+            </q-card-section>
+        </q-card-section>
+            <q-card-section>
+              <div class="cardfoo">
+               <div class="textfoo">Criado por <span style="color: #00ffff;">Dev</span><span>GBR</span> | ©Todos os direitos reservado 2023
+               </div>
+              </div>
+            </q-card-section>
+          </q-card>
+        </footer>
         <div style=" position: fixed; top: 67%; right: 2%;">
         <FloatingActionsVue/>
         </div>
+        
        </q-page>
      </q-page-container>
    </q-layout>
@@ -53,6 +79,50 @@
 </template>
 
 <style scoped>
+.textfoo{
+  color: white;
+  margin: 10px auto;
+  width: 34%;
+  font-size: 17px;
+}
+.cardfoo{
+  border: solid;
+    position: absolute;
+    /* bottom: 0; */
+    left: 0px;
+    background: black;
+    width: 100.02%;
+    height: 50px;
+}
+.text-h6{
+  margin: 0 auto;
+ font-size: 50px !important;
+ font-family: 'UbuntuBold', sans-serif;
+}
+.falecomigo{
+    position: absolute;
+    top: 57px;
+    left: 50%;
+    font-size: 20px;
+    background: #fff;
+    color: #29d8ff;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.barra{
+    width: 180px;
+    height: 4px;
+    background: rgb(7, 7, 7);
+    border: solid;
+    margin-top: 30px !important;
+    margin: 0 auto;
+}
 .links{
   margin-right: 40px;
  

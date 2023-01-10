@@ -36,7 +36,145 @@
     </q-card>
       
     </div>
+    <div id="skils" class="skils">
+      
+      
+    <q-card-section>
+      <div class="text-h6" style="margin: 0 auto; width: 5%; color: white">Skils</div>
+      
+    </q-card-section>
+
+    <q-separator style="background: #00ffff; width: 15%; margin: 0 auto;" inset />
+
+    <q-card-section>
+      <table>
+        <tr>
+          <td v-for="index in 3" :key="index">
+            <div class="row justify-center q-gutter-sm">
+              <q-card class="my-card" style="width:70%;">
+                <img src="img/python.jpg">
+
+                <q-card-section>
+                  <div class="text-h6">Our Changing Planet</div>
+                  <div class="text-subtitle2">by John Doe</div>
+                </q-card-section>
+
+                <q-card-section class="q-pt-none">
+        
+                </q-card-section>
+              </q-card>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td v-for="index in 3" :key="index">
+            <div class="row justify-center q-gutter-sm">
+              <q-card class="my-card" style="width:70%;">
+                <img src="img/python.jpg">
+
+                <q-card-section>
+                  <div class="text-h6">Our Changing Planet</div>
+                  <div class="text-subtitle2">by John Doe</div>
+                </q-card-section>
+
+                <q-card-section class="q-pt-none">
+        
+                </q-card-section>
+              </q-card>
+            </div>
+          </td>
+        </tr>
+      </table>
+      
+    </q-card-section>
+  
     
+  </div>
+  <div id="exp" class="exp">
+      
+      <q-card  class="my-card">
+    <q-card-section>
+      <div class="text-h6" style="margin: 0 auto; width: 23%;">Experiencias/cursos</div>
+      
+    </q-card-section>
+
+    <q-separator style="background: black" inset />
+
+    <q-card-section>
+      <div >
+        <div class="row justify-center q-gutter-sm">
+          <div style="display: flex;">
+      <q-card class="q-ma-sm">
+          <img src="https://cdn.quasar.dev/img/mountains.jpg">
+
+          <q-card-section>
+            <div class="text-h6">Card #</div>
+            <div class="text-subtitle2">by John Doe</div>
+          </q-card-section>
+        </q-card>
+  </div>
+    <q-carousel
+      swipeable
+      animated
+      v-model="slide"
+      thumbnails
+      
+      style="width:70%;"
+    >
+      <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg" />
+      <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
+      <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
+      <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
+    </q-carousel>
+       </div>
+      </div>
+    </q-card-section>
+  </q-card>
+    
+  </div>
+  <div class="projetos" id="projetos">
+    <div class="text-h6" style="margin: 0 auto; width: 15%; color: white; padding-left: 3%;">Projetos</div>
+    <q-separator style="background: #00ffff; width: 15%; margin: 0 auto;"  inset />
+    <q-carousel
+      v-model="projeto"
+      transition-prev="slide-right"
+      transition-next="slide-left"
+      swipeable
+      animated
+      control-color="primary"
+      navigation
+      padding
+      arrows
+      style="background: none" 
+      height="300px"
+      class=" shadow-2 "
+    >
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/mountains.jpg" />
+          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/parallax1.jpg" />
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="2" class="column no-wrap">
+        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/parallax2.jpg" />
+          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/quasar.jpg" />
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="3" class="column no-wrap">
+        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/cat.jpg" />
+          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/linux-avatar.png" />
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="4" class="column no-wrap">
+        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/material.png" />
+          <q-img class="rounded-borders col-6 full-height" src="https://cdn.quasar.dev/img/donuts.png" />
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+    </div>
   
 </LayoutHome>
 </template>
@@ -170,6 +308,7 @@ import LayoutHome from '@/Layout/LayoutHome.vue';
 
 import FloatingActionsVue from './FloatingActions.vue';
 
+import { ref } from 'vue'
 
 export default {
   components: { 
@@ -184,7 +323,9 @@ export default {
       currentCharIndex: 0,
       typingSpeed: 100,
       eraseSpeed: 50,
-      isErasing: false
+      isErasing: false,
+      slide: ref(1),
+      projeto: ref(1),
     }
   },
   mounted () {
