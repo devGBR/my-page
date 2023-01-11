@@ -82,7 +82,7 @@
 .textfoo{
   color: white;
   margin: 10px auto;
-  width: 34%;
+  
   font-size: 17px;
 }
 .cardfoo{
@@ -93,6 +93,7 @@
     background: black;
     width: 100.02%;
     height: 50px;
+    display: flex;
 }
 .text-h6{
   margin: 0 auto;

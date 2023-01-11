@@ -1,9 +1,9 @@
 <template>
   <LayoutHome>
-    <img src="img/bannert.png" class="bg" style="" alt="">
-  
+    
+  <div class="topo" style="background: url('/img/bgp.png') fixed;">
     <section class="home" id="home">
-      <div class="title" style="position: absolute;">
+      <div class="title" style="">
     <div class="text-1">Olá, meu nome é</div>
     
     <div class="text-2">Gabriel Felipe</div>
@@ -36,6 +36,8 @@
     </q-card>
       
     </div>
+  </div>
+   <div class="centro" style="background: url('img/bg.jpg') fixed;">
     <div id="skils" class="skils">
       
       
@@ -175,14 +177,23 @@
       </q-carousel-slide>
     </q-carousel>
     </div>
-  
+  </div>
 </LayoutHome>
 </template>
 
 <style scoped>
+.topo{
+  
+  background-size: 100% !important;
+}
 #sobremim{
   transition: 3s;
 }
+.centro{
+  
+  background-size: 100% !important;
+}
+
 .cardimg{
    border: 1px solid black;
    border-radius: 166px;
@@ -222,21 +233,18 @@ section{
 }
 .home{
     display: flex;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 0px;
     color: #fff;
-    min-height: 500px;
+    min-height: 800px;
     font-family: 'UbuntuRegular',sans-serif;
     width: 100%;
-    position: absolute;
-    top: 10px
+    position: static;
+    top: 10px;
+    
 }
 .title {
-  position: absolute;
+ 
   width: 100%;
-  height: 80%;
+  
   
   display: flex;
   flex-direction: column;
