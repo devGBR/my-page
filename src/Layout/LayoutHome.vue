@@ -9,26 +9,25 @@
        <q-toolbar>
         
          
-        <q-toolbar-title style="
-              color: #fff;
-              font-size: 35px;
-              font-weight: 600;
-              padding-left: 13%;">
-                <span style="color: #00ffff;">Dev</span><span>GBR</span>
-        </q-toolbar-title>
-                  <div class="links">
-                    <a href="#home">Inicio</a>
-                    <a href="#sobremim">Sobre mim</a>
-                    <a href="#skils">Skils</a>
-                    <a href="#exp">Experiências/Cursos</a>
-                    <a href="#projetos">Projetos</a>
-                    <a href="#footer">Contato</a>
-                  </div>
+         <q-toolbar-title style="
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    padding-left: 13%;
+"><span style="color: #00ffff;">Dev</span><span>GBR</span></q-toolbar-title>
+      <div class="links">
+        <a href="#home">Inicio</a>
+        <a href="#sobremim">Sobre mim</a>
+        <a href="#skils">Skils</a>
+        <a href="#exp">Experiências/Cursos</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#footer">Contato</a>
+      </div>
         
-                  <q-btn flat @click="openNav()" v-if="close===false" round dense icon="menu" class="sidebtn" style="margin-right: 4%;"/>
-                  <q-btn flat @click="closeNav()" v-if="close===true" round dense icon="close" class="sidebtn" style="margin-right: 4%;"/>
+        <q-btn flat @click="openNav()" v-if="close===false" round dense icon="menu" class="sidebtn" style="margin-right: 4%;"/>
+        <q-btn flat @click="closeNav()" v-if="close===true" round dense icon="close" class="sidebtn" style="margin-right: 4%;"/>
         
-      </q-toolbar>
+       </q-toolbar>
      </q-header>
      <div :style="myside" class="sidenav">
             
@@ -98,8 +97,8 @@
 }
 .text-h6{
   margin: 0 auto;
- font-size: 50px !important;
- font-family: 'UbuntuBold', sans-serif;
+  font-size: 50px !important;
+  font-family: 'UbuntuBold', sans-serif;
 }
 .falecomigo{
     position: absolute;
@@ -232,4 +231,3 @@ export default {
    
 
 </script>
-

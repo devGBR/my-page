@@ -75,11 +75,11 @@
 
 
                 <q-card-section>
-                  <img  style="width: 100%; height:100%;" :src="sk.image" alt="" >
+                  <img  style="width: 100%; height:100%; border-radius: 7px !important;" :src="sk.image" alt="" >
 
                 </q-card-section>
 
-                <q-card-section class="q-pt-none" style="font-size: 30px; font-family: 'UbuntuRegular';">
+                <q-card-section class="q-pt-none" :style="sk.color" style="font-size: 30px; font-family: 'UbuntuRegular';">
                     {{ sk.name }}
                 </q-card-section>
               </q-card>
@@ -484,20 +484,20 @@ export default {
     return {
       words: ['Full Stack', 'Designer', 'Suporte'],
       linguagens: ['Laravel', 'Vue.js', 'PHP', 'CSS' , 'Javascript', 'Node.js', 'Quasar', 'Bootstrap', 'Vuetify', 'Postgree', 'MySQL', 'React.js', 'Python', 'Tailwind'],
-      sk: [{name : 'Laravel', image: 'skils/'}, 
-            {name: 'Vue.js', image: 'skils/vue.png'}, 
-            {name: 'PHP', image: 'skils/php.png'}, 
-            {name: 'CSS', image: 'skils/css.png'} , 
-            {name: 'Javascript', image: 'skils/js.png'}, 
-            {name: 'Node.js', image: 'skils/node.png'}, 
-            {name: 'Quasar', image: 'skils/'}, 
-            {name: 'Bootstrap', image: 'skils/bootstrap.png'}, 
-            {name: 'Vuetify', image: 'skils/vuetify.png'}, 
-            {name: 'Postgree', image: 'skils/Postgre.png'}, 
-            {name: 'MySQL', image: 'skils/mysql.png'}, 
-            {name: 'React.js', image: 'skils/react.png'}, 
-            {name: 'Python', image: 'skils/python.png'}, 
-            {name: 'Tailwind', image: 'skils/tailwind.png'}],
+      sk: [{name : 'Laravel', image: 'skils/laravel.png' , color: 'color: #ff2d20;'}, 
+            {name: 'Vue.js', image: 'skils/vue.png' , color: 'color: #41b883 ;'}, 
+            {name: 'PHP', image: 'skils/php.png' , color: 'color: #778bc7 ;'}, 
+            {name: 'CSS', image: 'skils/css.png' , color: 'color: #0089ca;'} , 
+            {name: 'Javascript', image: 'skils/js.png' , color: 'color: #f7df1e ;'}, 
+            {name: 'Node.js', image: 'skils/node.png' , color: 'color: #80bd00;'}, 
+            {name: 'Quasar', image: 'skils/quasar.png' , color: 'color:transparent; background:  conic-gradient( white 180deg, #00b4ff 240deg );-webkit-background-clip: text; background-clip: text;'}, 
+            {name: 'Bootstrap', image: 'skils/bootstrap.png' , color: 'color: #5e2aaa;'}, 
+            {name: 'Vuetify', image: 'skils/vuetify.png' , color: 'color:transparent; background:  conic-gradient( #1867c0 180deg, #7bc6ff 240deg );-webkit-background-clip: text; background-clip: text;'}, 
+            {name: 'Postgre', image: 'skils/Postgre.png' , color: 'color: #346993;'}, 
+            {name: 'MySQL', image: 'skils/mysql.png' , color: 'color:transparent; background:  conic-gradient( orange 246deg, #00758f  240deg );-webkit-background-clip: text; background-clip: text;'}, 
+            {name: 'React.js', image: 'skils/react.png' , color: 'color: #00dbfc;'}, 
+            {name: 'Python', image: 'skils/python.png' , color: 'color:transparent; background:  conic-gradient( yellow 180deg, #346993 240deg );-webkit-background-clip: text; background-clip: text;'}, 
+            {name: 'Tailwind', image: 'skils/tailwind.png' , color: 'color:transparent; background: linear-gradient(to right ,#077c92,#06f6de);-webkit-background-clip: text; background-clip: text;'}],
       trabalho: '',
       typedText: '',
       currentWordIndex: 0,
