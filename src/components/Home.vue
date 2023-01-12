@@ -1,7 +1,7 @@
 <template>
   <LayoutHome>
 
-    <div class="topo" style="background: url('/img/bgp.png') fixed;">
+    <div class="topo" style="background: url('/img/bgp.png')  top no-repeat fixed ;">
       <section class="home" id="home">
         <div class="title" style="">
           <div class="text-1">Olá, meu nome é</div>
@@ -31,7 +31,7 @@
             inset />
 
           <q-card-section>
-            <div style="display:flex; margin-bottom: 50px;">
+            <div class="card-sobre" >
               <q-avatar size="400px" class="perfil">
                 <img src="img/perfil.jpg" alt="">
               </q-avatar>
@@ -277,6 +277,10 @@
 </template>
 
 <style scoped>
+.card-sobre{
+    display:flex !important; 
+    margin-bottom: 50px;
+}
 .my-card {
   width: calc(37% - 30px);
   background: #222;
@@ -436,7 +440,15 @@ p {
     background-color: #ccc;
   }
 }
-
+@media screen and ( max-width: 855px){
+  .card-sobre{
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: 1s ease-out;
+  }
+}
 
 @media screen and (max-width: 700px) {
   .home {

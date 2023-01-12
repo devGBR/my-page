@@ -68,7 +68,7 @@
             </q-card-section>
           </q-card>
         </footer>
-        <div style=" position: fixed; top: 67%; right: 2%;">
+        <div style=" position: fixed; bottom: -10%; right: 2%;">
         <FloatingActionsVue/>
         </div>
         
