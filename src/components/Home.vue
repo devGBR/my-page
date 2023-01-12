@@ -70,17 +70,17 @@
 
         <q-card-section>
           <div class="skil">
-            <div class="row justify-center q-gutter-sm" style="width: 300px;" v-for="linguagens, index in linguagens" :key="index">
+            <div class="row justify-center q-gutter-sm" style="width: 300px;" v-for="sk, index in sk" :key="index">
               <q-card class="my-card" style="width: calc(100% - 30px) !important;">
 
 
                 <q-card-section>
-                  <img src="{{  }}" alt="" srcset="">
+                  <img  style="width: 100%; height:100%;" :src="sk.image" alt="" >
 
                 </q-card-section>
 
                 <q-card-section class="q-pt-none" style="font-size: 30px; font-family: 'UbuntuRegular';">
-                    {{ linguagens }}
+                    {{ sk.name }}
                 </q-card-section>
               </q-card>
             </div>
@@ -484,6 +484,20 @@ export default {
     return {
       words: ['Full Stack', 'Designer', 'Suporte'],
       linguagens: ['Laravel', 'Vue.js', 'PHP', 'CSS' , 'Javascript', 'Node.js', 'Quasar', 'Bootstrap', 'Vuetify', 'Postgree', 'MySQL', 'React.js', 'Python', 'Tailwind'],
+      sk: [{name : 'Laravel', image: 'skils/'}, 
+            {name: 'Vue.js', image: 'skils/vue.png'}, 
+            {name: 'PHP', image: 'skils/php.png'}, 
+            {name: 'CSS', image: 'skils/css.png'} , 
+            {name: 'Javascript', image: 'skils/js.png'}, 
+            {name: 'Node.js', image: 'skils/node.png'}, 
+            {name: 'Quasar', image: 'skils/'}, 
+            {name: 'Bootstrap', image: 'skils/bootstrap.png'}, 
+            {name: 'Vuetify', image: 'skils/vuetify.png'}, 
+            {name: 'Postgree', image: 'skils/Postgre.png'}, 
+            {name: 'MySQL', image: 'skils/mysql.png'}, 
+            {name: 'React.js', image: 'skils/react.png'}, 
+            {name: 'Python', image: 'skils/python.png'}, 
+            {name: 'Tailwind', image: 'skils/tailwind.png'}],
       trabalho: '',
       typedText: '',
       currentWordIndex: 0,
