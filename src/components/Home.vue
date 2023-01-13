@@ -107,12 +107,22 @@
           <div>
             <div class="row justify-center q-gutter-sm">
               <div style="display: flex;">
-                <q-card class="q-ma-sm">
-                  <img src="https://cdn.quasar.dev/img/mountains.jpg">
+                <q-card class="profissao">
+                  <img src="img/logocge.png" style="
+    height: 470px; width: 400px;
+">
 
                   <q-card-section>
-                    <div class="text-h6">Card #</div>
-                    <div class="text-subtitle2">by John Doe</div>
+                    <div class="text-h6 text" style="color: #00ffff; margin-left: 3px;  margin-bottom: 30px !important; font-size: 27px !important;">Controladoria Geral do Estado do Amapá </div>
+                    <div class="sub" style="margin-top: 10px; margin-left: 35px; font-size: 30px !important; font-family: 'Ubuntu',sans-serif; color: #999; font-style: italic;">Estágiario</div>
+                    <div class="text-h5" style="margin-top: 20px; margin-left: 10px; font-size: 20px !important;"> • <span class="conteudo">Coordenadoria de Tecnologia da Informação - CTEC</span></div>
+                    <div class="text-h5" style="margin-top: 20px; font-size: 20px !important;">Descrição: 
+                      <div class="conteudo" style="margin-left: 20px; font-size: 13px; display: grid;"> 
+                          <div>• Desenvolvimento de aplicações web e programas em php, laravel, vue js, python.</div>
+                          <div>• Manutenção de sistemas web desenvolvidos em PHP com base de dados PostgreSQL.</div>
+                          <div>• Suporte TI. </div>
+                      </div>
+                  </div>
                   </q-card-section>
                 </q-card>
               </div>
@@ -131,15 +141,24 @@
           inset />
 
           <q-card-section>
+            <q-card-section>
+          <div class="text-h6"
+            style="display:flex; justify-content: center; color: white; margin: 40px auto; margin-bottom: 20px !important;">
+            Certificados</div>
+        </q-card-section>
             <div style="">
               <div class="row justify-center q-gutter-sm">
-                <div style="display: flex; width: 100%; justify-content: center;">
+                <div style="display: flex; width: 942px; height: 600px; justify-content: center;">
                   
-                  <q-carousel swipeable animated v-model="slide" thumbnails style="width:70%;">
-                    <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg" />
-                    <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
-                    <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
-                    <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
+                  <q-carousel swipeable animated v-model="slide" thumbnails style="width: 100%; height: 100%;">
+                    <q-carousel-slide :name="1" style="background-size: 100%;" img-src="certificados/arduino.png" />
+                    <q-carousel-slide :name="2" style=" width:100%;" img-src="certificados/science.png" />
+                    <q-carousel-slide :name="3" style=" width:100%;" img-src="certificados/Enap.png" />
+                    <q-carousel-slide :name="4" style=" width:100%;" img-src="certificados/tifgv.png" />
+                    <q-carousel-slide :name="5" style=" width:100%;" img-src="certificados/vuejs.png" />
+                    <q-carousel-slide :name="6" style=" width:100%;" img-src="certificados/css.png" />
+                    <q-carousel-slide :name="7" style=" width:100%;" img-src="certificados/html.png" />
+                    <q-carousel-slide :name="8" style=" width:100%;" img-src="certificados/infocus.png" />
                   </q-carousel>
                 </div>
               </div>
@@ -168,7 +187,9 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section>
+                <div class="text titlepj" style=""><div class="textitlepj">Sistema de Monitoramento de Contratos - CGEAP</div></div>
               </q-card>
+             
               <q-card class="my-card">
                                        
                 <q-card-section>
@@ -179,6 +200,7 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section> 
+                <div class="text titlepj" style=""><div class="textitlepj">JOPE</div></div>
               </q-card>
               <q-card class="my-card">
                     
@@ -191,6 +213,7 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section>
+                <div class="text titlepj" style=""><div class="textitlepj">Recriação Mirror Fashion</div></div>
               </q-card>
 
             </div>
@@ -206,6 +229,9 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section>
+                <div class="text titlepj" style="">
+                  <div class="textitlepj">Implementação do GLPI na CGEAP</div>
+                </div>
               </q-card>
               <q-card class="my-card">
                                        
@@ -217,6 +243,7 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section> 
+                <div class="text titlepj" style=""><div class="textitlepj">eTransporte - CGEAP</div></div>
               </q-card>
               <q-card class="my-card">
                     
@@ -229,6 +256,7 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section>
+                <div class="text titlepj" style=""><div class="textitlepj">Sistema De Gerenciamento de Estoque</div></div>
               </q-card>
             </div>
           </q-carousel-slide>
@@ -243,6 +271,7 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section>
+                <div class="text titlepj" style=""><div class="textitlepj">Pizzaria Santa Rita</div></div>
               </q-card>
               <q-card class="my-card">
                                        
@@ -254,6 +283,7 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section> 
+                <div class="text titlepj" style=""><div class="textitlepj">Programa em Python criador de array php</div></div>
               </q-card>
          
               <q-card class="my-card">
@@ -266,6 +296,7 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section> 
+                <div class="text titlepj" style=""><div class="textitlepj">Jogo do Mario Simples</div></div>
               </q-card>
             </div>
           </q-carousel-slide>
@@ -277,6 +308,17 @@
 </template>
 
 <style scoped>
+.titlepj{
+    width: 500px;
+    display: flex !important;
+    justify-content: center !important;
+    position: absolute;
+    margin-top: 25px;
+}
+.textitlepj{
+  color: rgb(255, 255, 255);
+  font-size: 20px !important;
+}
 .card-sobre{
     display:flex !important; 
     margin-bottom: 50px;
@@ -291,6 +333,13 @@
   transition: all .3s ease;
   margin-bottom: 40px;
 }
+.profissao{
+  background: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 .skil {
   display: flex;
@@ -325,7 +374,12 @@
   font-family: "UbuntuRegular", sans-serif;
   font-size: 50px !important;
 }
-
+.text{
+  display: flex;
+ 
+  justify-content: center;
+  font-family: 'UbuntuMedium', sans-serif !important;
+}
 .btn {
   margin-top: 20px;
   width: 200px;
@@ -357,7 +411,16 @@
 section {
   padding: 100px 0;
 }
-
+.text-h5{
+  font-size: 34px;
+  font-family: 'UbuntuMedium',sans-serif;
+  color: #00ffff;
+}
+.conteudo{
+  font-size: 21px;
+  font-family: 'UbuntuRegular';
+  color: #ccc;
+}
 .home {
   display: flex;
   color: #fff;
