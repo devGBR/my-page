@@ -187,7 +187,15 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section>
-                <div class="text titlepj" style=""><div class="textitlepj">Sistema de Monitoramento de Contratos - CGEAP</div></div>
+                <div class="text titlepj" style="">
+                  <div class="textitlepj" style="font-size: 25px !important">
+                    PROJETO DO ESTÁGIO
+                  </div>
+                    <div class="textitlepj">
+                      Sistema de Monitoramento de Contratos - CGEAP
+                    </div>
+                    <div class="conteudopj"></div>
+                  </div>
               </q-card>
              
               <q-card class="my-card">
@@ -200,7 +208,7 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section> 
-                <div class="text titlepj" style=""><div class="textitlepj">JOPE</div></div>
+                <div class="text titlepj" style=""><div class="textitlepj" style="font-size: 25px !important">PROJETO FREELANCER</div><div class="textitlepj" >JOPE</div></div>
               </q-card>
               <q-card class="my-card">
                     
@@ -213,7 +221,14 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section>
-                <div class="text titlepj" style=""><div class="textitlepj">Recriação Mirror Fashion</div></div>
+                <div class="text titlepj" style="">
+                  <div class="textitlepj" style="font-size: 25px !important">
+                    PROJETO DE APRENDIZAGEM
+                  </div>
+                  <div class="textitlepj">
+                    Recriação Mirror Fashion
+                  </div>
+                </div>
               </q-card>
 
             </div>
@@ -230,6 +245,9 @@
                     
                 </q-card-section>
                 <div class="text titlepj" style="">
+                  <div class="textitlepj" style="font-size: 25px !important">
+                    PROJETO DO ESTÁGIO
+                  </div>
                   <div class="textitlepj">Implementação do GLPI na CGEAP</div>
                 </div>
               </q-card>
@@ -243,7 +261,11 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section> 
-                <div class="text titlepj" style=""><div class="textitlepj">eTransporte - CGEAP</div></div>
+                <div class="text titlepj" style="">
+                  <div class="textitlepj" style="font-size: 25px !important">
+                    PROJETO DO ESTÁGIO
+                  </div>
+                  <div class="textitlepj">eTransporte - CGEAP</div></div>
               </q-card>
               <q-card class="my-card">
                     
@@ -256,7 +278,9 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section>
-                <div class="text titlepj" style=""><div class="textitlepj">Sistema De Gerenciamento de Estoque</div></div>
+                <div class="text titlepj" style=""><div class="textitlepj" style="font-size: 25px !important">
+                    PROJETO DE APRENDIZAGEM
+                  </div><div class="textitlepj">Sistema De Gerenciamento de Estoque</div></div>
               </q-card>
             </div>
           </q-carousel-slide>
@@ -271,7 +295,7 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section>
-                <div class="text titlepj" style=""><div class="textitlepj">Pizzaria Santa Rita</div></div>
+                <div class="text titlepj" style=""><div class="textitlepj" style="font-size: 25px !important">PROJETO FREELANCER</div><div class="textitlepj">Pizzaria Santa Rita</div></div>
               </q-card>
               <q-card class="my-card">
                                        
@@ -283,7 +307,11 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section> 
-                <div class="text titlepj" style=""><div class="textitlepj">Programa em Python criador de array php</div></div>
+                <div class="text titlepj" style="">
+                  <div class="textitlepj" style="font-size: 25px !important">
+                    PROJETO DO ESTÁGIO
+                  </div>
+                  <div class="textitlepj">Programa em Python criador de array php</div></div>
               </q-card>
          
               <q-card class="my-card">
@@ -296,7 +324,14 @@
                 <q-card-section class="q-pt-none">
                     
                 </q-card-section> 
-                <div class="text titlepj" style=""><div class="textitlepj">Jogo do Mario Simples</div></div>
+                <div class="text titlepj" style="">
+                  <div class="textitlepj" style="font-size: 25px !important">
+                    PROJETO DE APRENDIZAGEM
+                  </div>
+                  <div class="textitlepj">
+                    Jogo do Mario Simples
+                  </div>
+                </div>
               </q-card>
             </div>
           </q-carousel-slide>
@@ -311,6 +346,7 @@
 .titlepj{
     width: 500px;
     display: flex !important;
+    flex-direction: column;
     justify-content: center !important;
     position: absolute;
     margin-top: 25px;
