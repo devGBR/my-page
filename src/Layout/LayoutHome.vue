@@ -44,7 +44,7 @@
         
         <slot />
         <footer id="footer">
-          <q-card  class="my-card">
+          <q-card  class="my-card" style="    background-image: linear-gradient(1deg, black, #00ffff);">
             <q-card-section>
               <div class="title">
               <div class="text-h6">
@@ -56,17 +56,30 @@
                 </div>
               </div>
             </div>
-            <div style="display: flex;">
+            <div style="display: flex; padding-left: 190px; margin-top: 30px;">
+              <div style="    width: 56px;
+    display: flex;
+    /* height: 250px; */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    
+    border-right: 1px solid black;
+
+    ">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 24 24" width="40px" fill="#FFFFFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              </div>
             <div class="linksocial">
                   <!-- Instagram -->
                   <div style="margin-bottom: 20px; display: flex;">
                   <svg width="30px" height="30px"  viewBox="0 0 3364.7 3364.7" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="0" cx="217.76" cy="3290.99" r="4271.92" gradientUnits="userSpaceOnUse"><stop offset=".09" stop-color="#fa8f21"/><stop offset=".78" stop-color="#d82d7e"/></radialGradient><radialGradient id="1" cx="2330.61" cy="3182.95" r="3759.33" gradientUnits="userSpaceOnUse"><stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"/><stop offset="1" stop-color="#8c3aaa"/></radialGradient></defs><path d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9" fill="url(#0)"/><path d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9" fill="url(#1)"/><path d="M1269.25,1689.52c0-230.11,186.49-416.7,416.6-416.7s416.7,186.59,416.7,416.7-186.59,416.7-416.7,416.7-416.6-186.59-416.6-416.7m-225.26,0c0,354.5,287.36,641.86,641.86,641.86s641.86-287.36,641.86-641.86-287.36-641.86-641.86-641.86S1044,1335,1044,1689.52m1159.13-667.31a150,150,0,1,0,150.06-149.94h-0.06a150.07,150.07,0,0,0-150,149.94M1180.85,2707c-121.87-5.55-188.11-25.85-232.13-43-58.36-22.72-100-49.78-143.78-93.5s-70.88-85.32-93.5-143.68c-17.16-44-37.46-110.26-43-232.13-6.06-131.76-7.27-171.34-7.27-505.15s1.31-373.28,7.27-505.15c5.55-121.87,26-188,43-232.13,22.72-58.36,49.78-100,93.5-143.78s85.32-70.88,143.78-93.5c44-17.16,110.26-37.46,232.13-43,131.76-6.06,171.34-7.27,505-7.27S2059.13,666,2191,672c121.87,5.55,188,26,232.13,43,58.36,22.62,100,49.78,143.78,93.5s70.78,85.42,93.5,143.78c17.16,44,37.46,110.26,43,232.13,6.06,131.87,7.27,171.34,7.27,505.15s-1.21,373.28-7.27,505.15c-5.55,121.87-25.95,188.11-43,232.13-22.72,58.36-49.78,100-93.5,143.68s-85.42,70.78-143.78,93.5c-44,17.16-110.26,37.46-232.13,43-131.76,6.06-171.34,7.27-505.15,7.27s-373.28-1.21-505-7.27M1170.5,447.09c-133.07,6.06-224,27.16-303.41,58.06-82.19,31.91-151.86,74.72-221.43,144.18S533.39,788.47,501.48,870.76c-30.9,79.46-52,170.34-58.06,303.41-6.16,133.28-7.57,175.89-7.57,515.35s1.41,382.07,7.57,515.35c6.06,133.08,27.16,223.95,58.06,303.41,31.91,82.19,74.62,152,144.18,221.43s139.14,112.18,221.43,144.18c79.56,30.9,170.34,52,303.41,58.06,133.35,6.06,175.89,7.57,515.35,7.57s382.07-1.41,515.35-7.57c133.08-6.06,223.95-27.16,303.41-58.06,82.19-32,151.86-74.72,221.43-144.18s112.18-139.24,144.18-221.43c30.9-79.46,52.1-170.34,58.06-303.41,6.06-133.38,7.47-175.89,7.47-515.35s-1.41-382.07-7.47-515.35c-6.06-133.08-27.16-224-58.06-303.41-32-82.19-74.72-151.86-144.18-221.43S2586.8,537.06,2504.71,505.15c-79.56-30.9-170.44-52.1-303.41-58.06C2068,441,2025.41,439.52,1686,439.52s-382.1,1.41-515.45,7.57" fill="#ffffff"/></svg>
-                    <a href="https://www.instagram.com/gaabriel.flp/" style="color: #00ffff; margin-left: 5px !important; font-size: 20px;">  <span style="color: #111">Instagram - </span>gaabriel.flp</a>
+                    <a href="https://www.instagram.com/gaabriel.flp/" style="color: #fff; margin-left: 5px !important; font-size: 20px;">  <span style="color: #111">Instagram - </span>gaabriel.flp</a>
                 </div>
                   <!-- Linkedin -->
                   <div style="margin-bottom: 20px; display: flex;">
                   <svg width="30px" height="30px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg>
-                    <a href="https://www.linkedin.com/in/dev-gbr" style="color: #00ffff; margin-left: 5px !important; font-size: 20px;"><span style="color: #111">LinkedIn - </span>Gabriel Oliveira</a>
+                    <a href="https://www.linkedin.com/in/dev-gbr" style="color: #fff; margin-left: 5px !important; font-size: 20px;"><span style="color: #111">LinkedIn - </span>Gabriel Oliveira</a>
                 </div>
                   <!-- Gmail -->
                   <div style="margin-bottom: 20px; display: flex;">
@@ -80,15 +93,15 @@
                   <path d="M9.94043 8.52441V15.0671L9.94811 15.0734V8.53073L9.94043 8.52441Z" fill="#C5221F"/>
                   <path d="M5 11.4668V22.6591C5.07646 23.8904 6.15673 24.0003 6.15673 24.0003H9.94877L9.94014 15.0671L5 11.4668Z" fill="#4285F4"/>
                   </svg>
-                  <a href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcSBmzXTsvKScKHXPVxmQbvwVWztdTWVqfTSdgqdVFgZVWKhrgGthdXDTWVsRvCvGfzNlQnnC" style="color: #00ffff; margin-left: 5px !important; font-size: 20px;"> <span style="color: #111"> Email - </span>Devgbr47@gmail.com </a>
+                  <a href="https://mail.google.com/mail/u/2/#inbox?compose=GTvVlcSBmzXTsvKScKHXPVxmQbvwVWztdTWVqfTSdgqdVFgZVWKhrgGthdXDTWVsRvCvGfzNlQnnC" style="color: #fff; margin-left: 5px !important; font-size: 20px;"> <span style="color: #111"> Email - </span><span style="color: #00ffff;">Dev</span>gbr47@gmail.com </a>
                 </div>
                   <!-- Gitlab -->
                   <div style="margin-bottom: 20px; display: flex;">
                   <svg width="30px" height="30px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#FC6D26" d="M14.975 8.904L14.19 6.55l-1.552-4.67a.268.268 0 00-.255-.18.268.268 0 00-.254.18l-1.552 4.667H5.422L3.87 1.879a.267.267 0 00-.254-.179.267.267 0 00-.254.18l-1.55 4.667-.784 2.357a.515.515 0 00.193.583l6.78 4.812 6.778-4.812a.516.516 0 00.196-.583z"/><path fill="#E24329" d="M8 14.296l2.578-7.75H5.423L8 14.296z"/><path fill="#FC6D26" d="M8 14.296l-2.579-7.75H1.813L8 14.296z"/><path fill="#FCA326" d="M1.81 6.549l-.784 2.354a.515.515 0 00.193.583L8 14.3 1.81 6.55z"/><path fill="#E24329" d="M1.812 6.549h3.612L3.87 1.882a.268.268 0 00-.254-.18.268.268 0 00-.255.18L1.812 6.549z"/><path fill="#FC6D26" d="M8 14.296l2.578-7.75h3.614L8 14.296z"/><path fill="#FCA326" d="M14.19 6.549l.783 2.354a.514.514 0 01-.193.583L8 14.296l6.188-7.747h.001z"/><path fill="#E24329" d="M14.19 6.549H10.58l1.551-4.667a.267.267 0 01.255-.18c.115 0 .217.073.254.18l1.552 4.667z"/></svg>
-                    <a href="https://gitlab.com/devGBR" style="color: #00ffff; margin-left: 5px !important; font-size: 20px;"> <span style="color: #111">GitLab -  </span> DevGBR</a>
+                    <a href="https://gitlab.com/devGBR" style="color: #fff; margin-left: 5px !important; font-size: 20px;"> <span style="color: #111">GitLab -  </span> <span style="color: #00ffff;">Dev</span>GBR</a>
                 </div>
                   <!-- Github -->
-                  <div style="margin-bottom: 20px; display: flex;">
+                  <div style="margin-bottom: 15px; display: flex;">
                   <svg width="30px" height="30px" viewBox="0 0 73 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">             
                       <title>team-collaboration/version-control/github</title>
                       <desc>Created with Sketch.</desc>
@@ -106,13 +119,26 @@
                         </g>
                       </g>
                     </svg>
-                    <a href="https://github.com/devGBR" style="color: #00ffff; margin-left: 5px !important; font-size: 20px;"> <span style="color: #111">GitHub -  </span> DevGBR</a>
+                    <a href="https://github.com/devGBR" style="color: #fff; margin-left: 5px !important; font-size: 20px;"> <span style="color: #111">GitHub -  </span> <span style="color: #00ffff;">Dev</span>GBR</a>
                   </div>
                   
                 </div>
                 <!-- Whatsapp -->
-                <div style="margin-top: 20px;">
-                  <svg width="30px" height="30px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div style="    padding-top: 17px;  padding-left: 0px; display: flex; ">
+                  <div style="    width: 46px;
+    display: flex;
+    /* height: 250px; */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    border-top-left-radius: 8px;
+    border: 1px solid black;
+    border-bottom-left-radius: 8px;
+    background-color: #202c33;
+    border-right: none;
+    ">
+<svg width="30px" height="30px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C23.732 31 30 24.732 30 17C30 9.26801 23.732 3 16 3C8.26801 3 2 9.26801 2 17C2 19.5109 2.661 21.8674 3.81847 23.905L2 31L9.31486 29.3038C11.3014 30.3854 13.5789 31 16 31ZM16 28.8462C22.5425 28.8462 27.8462 23.5425 27.8462 17C27.8462 10.4576 22.5425 5.15385 16 5.15385C9.45755 5.15385 4.15385 10.4576 4.15385 17C4.15385 19.5261 4.9445 21.8675 6.29184 23.7902L5.23077 27.7692L9.27993 26.7569C11.1894 28.0746 13.5046 28.8462 16 28.8462Z" fill="#BFC8D0"/>
                   <path d="M28 16C28 22.6274 22.6274 28 16 28C13.4722 28 11.1269 27.2184 9.19266 25.8837L5.09091 26.9091L6.16576 22.8784C4.80092 20.9307 4 18.5589 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z" fill="url(#paint0_linear_87_7264)"/>
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M16 30C23.732 30 30 23.732 30 16C30 8.26801 23.732 2 16 2C8.26801 2 2 8.26801 2 16C2 18.5109 2.661 20.8674 3.81847 22.905L2 30L9.31486 28.3038C11.3014 29.3854 13.5789 30 16 30ZM16 27.8462C22.5425 27.8462 27.8462 22.5425 27.8462 16C27.8462 9.45755 22.5425 4.15385 16 4.15385C9.45755 4.15385 4.15385 9.45755 4.15385 16C4.15385 18.5261 4.9445 20.8675 6.29184 22.7902L5.23077 26.7692L9.27993 25.7569C11.1894 27.0746 13.5046 27.8462 16 27.8462Z" fill="white"/>
@@ -123,9 +149,69 @@
                   <stop offset="1" stop-color="#27B43E"/>
                   </linearGradient>
                   </defs>
-                  </svg>
+                  </svg>              </div>
+                <div style="border: 1px solid; height:262px; border-top-right-radius: 8px;
+                    
+                    background-color: #121b21;
+                    ">
+                    
+                <div style="
+                    border: 1px solid transparent;
+                    background-color: #202c33;
+                    height: 50px;
+                    width: 500px;
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                    padding-left: 12px;
+                    border-top-right-radius: 7px;
+                    display: flex;
+                    align-items: center;
+                    ">
+                  
+                  
+                  <q-avatar size="37px">
+                     <img src="img/perfil.png">
+                  </q-avatar>
+                  <span style="margin-left: 15px; font-size: 20px; font-family: 'UbuntuRegular'; color: #fff;"><span style="color: #00ffff;">Dev</span>GBR</span>              
                 </div>
+                <div
+                  style="background: url('img/bg-chat.png'); height: 209px; width: 100%; background-size: 100%; background-position: center;
+                  ">
+                  <div style="display: flex">
+                   <q-input dark standout  color="green-10" filled v-model="text" label="Nome" :dense="dense"  style="background: #00000069; width: 50%;"/>
+                   <q-input dark standout  color="green-10" filled v-model="text" label="Serviço " :dense="dense"  style="background: #00000069; width: 50%; " />
+                  </div>
+                  <div style="max-height:">
+                   
+                   <q-input
+                        v-model="textareaModel"
+                        filled
+                        clearable
+                        autogrow
+                        color="green-8"
+                        dark standout
+                        label="Pequena Descrição"
+                        :shadow-text="textareaShadowText"
+                        @keydown="processTextareaFill"
+                        @focus="processTextareaFill"
+                        style="background: #00000069;"
+                        maxlength="200"
+                  />
+                   
+                  </div>
+                  <div style="
+    display: grid;
+    flex-direction: row-reverse;
+    justify-items: end;
+    position: absolute;
+    bottom: 12%;
+    padding-left: 19.5%;">
+                 <a :href="whatsapp"><q-btn color="green-10" icon-right="send" label="Enviar" /> </a>
               </div>
+              </div>
+            </div>
+            </div>
+            </div>
             <q-card-section>
               
             </q-card-section>
@@ -176,14 +262,18 @@
     flex-direction: column;
     width: 50%;
     flex-wrap: nowrap;
+    padding-top: 17px;
+   
+    padding-left: 15px;
+   
 }
 .falecomigo{
     position: absolute;
     top: 57px;
     left: 50%;
     font-size: 20px;
-    background: #fff;
-    color: #29d8ff;
+    background-image: linear-gradient(0deg, #00c3c3, #30dad5);
+    color: #ffffff;
     padding: 5px;
     transform: translateX(-50%);
 }
@@ -292,6 +382,7 @@ export default {
       drawerRight: ref(false),
       myside: "width: 0;",
       close: false,
+      whatsapp: 'https://wa.me/+5511973626174'
         }
     },
     methods: {
