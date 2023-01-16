@@ -178,22 +178,20 @@
                   style="background: url('img/bg-chat.png'); height: 209px; width: 100%; background-size: 100%; background-position: center;
                   ">
                   <div style="display: flex">
-                   <q-input dark standout  color="green-10" filled v-model="text" label="Nome" :dense="dense"  style="background: #00000069; width: 50%;"/>
-                   <q-input dark standout  color="green-10" filled v-model="text" label="Serviço " :dense="dense"  style="background: #00000069; width: 50%; " />
+                   <q-input dark standout  color="green-10" filled v-model="name" label="Nome"   style="background: #00000069; width: 50%;"/>
+                   <q-input dark standout  color="green-10" filled v-model="service" label="Serviço "   style="background: #00000069; width: 50%; " />
                   </div>
                   <div style="max-height:">
                    
                    <q-input
-                        v-model="textareaModel"
+                        v-model="desc"
                         filled
                         clearable
                         autogrow
                         color="green-8"
                         dark standout
                         label="Pequena Descrição"
-                        :shadow-text="textareaShadowText"
-                        @keydown="processTextareaFill"
-                        @focus="processTextareaFill"
+                       
                         style="background: #00000069;"
                         maxlength="200"
                   />
@@ -206,7 +204,7 @@
     position: absolute;
     bottom: 12%;
     padding-left: 19.5%;">
-                 <a :href="whatsapp"><q-btn color="green-10" icon-right="send" label="Enviar" /> </a>
+                 <a :href="whatsapp"><q-btn color="green-10" @click="whats" icon-right="send" label="Enviar" /> </a>
               </div>
               </div>
             </div>
@@ -382,7 +380,11 @@ export default {
       drawerRight: ref(false),
       myside: "width: 0;",
       close: false,
-      whatsapp: 'https://wa.me/+5511973626174'
+      whatsapp: 'https://wa.me/+5511973626174',
+      name: '',
+      service: '',
+      desc: '',
+      message: ''
         }
     },
     methods: {
@@ -394,6 +396,11 @@ export default {
         closeNav(){
           this.myside = "width: 0;";
           this.close = false;
+        },
+        whats(){
+          this.message = "https://wa.me/5511973626174?text=" + 'Olá, meu nome é ' + this.name + ' Gostaria de '+ this.service + ' Minha Descrição de serviço: ' + this.desc;
+          this.message.replace(' ', '%20')
+          this.whatsapp = this.message
         }
    }
 }
